@@ -30,6 +30,12 @@ RECIPES_PATH = os.path.join(DATA_DIR, "recipes.json")
 FEEDBACK_PATH = os.path.join(DATA_DIR, "feedback.csv")
 MODEL_PATH = os.path.join(DATA_DIR, "model.joblib")
 
+from fastapi.responses import RedirectResponse
+
+@app.get("/")
+def root():
+    return RedirectResponse(url="/docs")
+
 app = FastAPI(title="Romantic Recipes ML", version="0.1.0")
 
 app.add_middleware(
