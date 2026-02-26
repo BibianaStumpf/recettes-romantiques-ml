@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recettes Romantiques ML 💗</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <h1>Recettes Romantiques ML 💗</h1>
+      <p>Réponds au quiz, reçois une recette, donne une note… et l’app apprend tes goûts.</p>
+    </header>
+
+    <section class="card">
+      <h2>Quiz</h2>
+
+      <div class="grid">
+        <div class="field">
+          <label for="mood">Humeur</label>
+          <select id="mood">
+            <option value="fatigue">Fatigué(e)</option>
+            <option value="energie">Énergique</option>
+            <option value="romantique">Romantique</option>
+            <option value="triste">Triste</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="sweetOrSavory">Sucré ou salé ?</label>
+          <select id="sweetOrSavory">
+            <option value="sale">Salé</option>
+            <option value="sucre">Sucré</option>
+            <!-- option extra (se quiser “igual ao de antes”) -->
+            <option value="peu_importe">Peu importe</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="timeLevel">Temps disponible</label>
+          <select id="timeLevel">
+            <option value="tres_rapide">Très rapide (≤10 min)</option>
+            <option value="rapide">Rapide (10–25 min)</option>
+            <option value="sans_pression">Sans pression</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="hunger">Faim</label>
+          <select id="hunger">
+            <option value="faible">Faible</option>
+            <option value="moyenne">Moyenne</option>
+            <option value="forte">Forte</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="temperature">Température</label>
+          <select id="temperature">
+            <option value="froid">Froid</option>
+            <!-- option extra (se quiser “igual ao de antes”) -->
+            <option value="neutre">Neutre</option>
+            <option value="chaud">Chaud</option>
+            <option value="peu_importe">Peu importe</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="btnRecommend" class="btn primary">Recommander une recette ✨</button>
+
+        <div class="tiny">
+          <label for="epsilon">Surprises (exploration)</label>
+          <input id="epsilon" type="range" min="0" max="0.6" step="0.05" value="0.2" />
+          <span id="epsilonVal">0.20</span>
+        </div>
+      </div>
+
+      <div id="error" class="error hidden"></div>
+    </section>
+
+    <section class="card hidden" id="recipeCard">
+      <div class="recipeHead">
+        <h2 id="recipeTitle"></h2>
+        <span class="pill" id="recipeMeta"></span>
+      </div>
+
+      <div class="twoCol">
+        <div>
+          <h3>Ingrédients</h3>
+          <ul id="recipeIngredients"></ul>
+        </div>
+        <div>
+          <h3>Étapes</h3>
+          <ol id="recipeSteps"></ol>
+        </div>
+      </div>
+
+      <div class="ratingBox">
+        <div class="ratingRow">
+          <div>
+            <label for="rating">Tu as aimé ?</label>
+            <select id="rating">
+              <option value="5">5 — j’adore 💖</option>
+              <option value="4">4 — j’aime bien</option>
+              <option value="3">3 — ça va</option>
+              <option value="2">2 — bof</option>
+              <option value="1">1 — pas aimé</option>
+            </select>
+          </div>
+
+          <button id="btnSendFeedback" class="btn">Envoyer mon avis</button>
+        </div>
+
+        <div class="hint">
+          <span id="strategyHint">—</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Apprentissage 📈</h2>
+      <button id="btnAnalytics" class="btn">Voir le graphique</button>
+      <div id="analyticsBox" class="analytics"></div>
+    </section>
+
+    <footer class="footer">
+      <small>Local + mignon + ML léger ✨</small>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
