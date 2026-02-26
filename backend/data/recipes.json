@@ -1,0 +1,95 @@
+[
+  {
+    "id": "tartiflette",
+    "title": "Tartiflette savoyarde 🧀",
+    "time_min": 45,
+    "tags": ["sale", "comfort", "romantique"],
+    "ingredients": ["pommes de terre", "reblochon", "lardons", "oignon", "crème"],
+    "steps": [
+      "Fais cuire les pommes de terre.",
+      "Fais revenir les lardons et l’oignon.",
+      "Mélange avec la crème.",
+      "Dispose le reblochon par-dessus.",
+      "Enfourne jusqu’à gratiner."
+    ]
+  },
+  {
+    "id": "raclette",
+    "title": "Raclette maison 🥔",
+    "time_min": 60,
+    "tags": ["sale", "comfort", "romantique"],
+    "ingredients": ["fromage à raclette", "pommes de terre", "charcuterie", "cornichons"],
+    "steps": [
+      "Fais cuire les pommes de terre.",
+      "Fais fondre le fromage.",
+      "Assemble avec la charcuterie.",
+      "Déguste ensemble, bien au chaud."
+    ]
+  },
+  {
+    "id": "brigadeiro",
+    "title": "Brigadeiro brésilien 💘",
+    "time_min": 15,
+    "tags": ["sucre", "comfort", "romantique"],
+    "ingredients": ["lait concentré sucré", "chocolat en poudre", "beurre"],
+    "steps": [
+      "Mélange tout dans une casserole.",
+      "Remue jusqu’à épaississement.",
+      "Laisse refroidir.",
+      "Forme des petites boules et roule dans le chocolat."
+    ]
+  },
+  {
+    "id": "strogonoff",
+    "title": "Bœuf Stroganoff crémeux",
+    "time_min": 35,
+    "tags": ["sale", "comfort"],
+    "ingredients": ["bœuf", "crème", "champignons", "oignon", "riz"],
+    "steps": [
+      "Fais revenir le bœuf.",
+      "Ajoute oignon et champignons.",
+      "Incorpore la crème.",
+      "Sers avec du riz chaud."
+    ]
+  },
+  {
+    "id": "lentilles_comfy",
+    "title": "Lentilles mijotées (version cosy)",
+    "time_min": 40,
+    "tags": ["sale", "comfort", "leger"],
+    "ingredients": ["lentilles", "carotte", "oignon", "ail", "bouillon"],
+    "steps": [
+      "Fais revenir oignon et ail.",
+      "Ajoute carotte et lentilles.",
+      "Verse le bouillon.",
+      "Laisse mijoter doucement."
+    ]
+  },
+  {
+    "id": "guacamole",
+    "title": "Guacamole frais 🥑",
+    "time_min": 10,
+    "tags": ["sale", "leger", "rapide"],
+    "ingredients": ["avocat", "citron", "sel", "tomate", "oignon rouge"],
+    "steps": [
+      "Écrase l’avocat.",
+      "Ajoute citron et sel.",
+      "Mélange avec tomate et oignon.",
+      "Sers frais."
+    ]
+  },
+  {
+    "id": "porc_caramelise",
+    "title": "Porc caramélisé (effet wow) ✨",
+    "time_min": 70,
+    "tags": ["sale", "romantique"],
+    "ingredients": ["porc", "sucre", "sauce soja", "ail", "gingembre"],
+    "steps": [
+      "Fais dorer le porc.",
+      "Ajoute ail et gingembre.",
+      "Verse soja et sucre.",
+      "Laisse caraméliser doucement.",
+      "Sers avec du riz."
+    ]
+  }
+]
